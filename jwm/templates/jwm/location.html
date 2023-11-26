@@ -1,0 +1,78 @@
+{% extends 'jwm/base.html' %}
+{% load static %}
+
+{% block content %}
+        
+         <link rel="stylesheet" href="{% static 'trans/css/base.css' %}">
+        <link rel="stylesheet" href="{% static 'trans/css/vendor.css' %}">
+      
+        
+         <!--================banner Area =================-->
+        
+        <section class="breadcrumb_area br_image">
+
+
+
+            
+            <div class="container align-self-center">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="banner_content">
+                            
+                           
+                            <h1><font color="white">JWM & ASSOCIATES ACCOUNTANCY & AUDIT</font>   <img src="{% static 'image/jwmlogo.png' %}" width="200px" height="200px" ></h1>
+                            <h2 class="page-cover-tittle">Find Us</h2>
+                    <ol class="breadcrumb">
+                        <li><a href="{% url 'jwm-home' %}">Home</a></li>
+                        <li class="active">Location</li>
+                    </ol>
+                </div>
+                            
+                       
+                        <div class="col-md-12">
+                        <div class="banner_content">
+                           
+                            
+                                  
+
+
+                        </div>
+                    </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================banner Area =================-->
+        
+        <!--================Contact Area =================-->
+        <section class="contact_area section_gap">
+            <div class="container">
+                
+                <div class="row">
+                 
+
+                    <div class="col-md-3">
+                        <div class="contact_info">
+                            <div class="info_item">
+                                <i class="lnr lnr-home"></i>
+                                <h6>Kenya, Kiambu, Ruiru Distrtict</h6>
+                                <p> </p>
+                            </div>
+                            <div class="info_item">
+                                <i class="lnr lnr-direction"></i>
+                                <h6>Head Office Location:</h6>
+                                <h6><a href="#">Address: Kiambu, Ruiru Rock Garden, Ruiru-Githunguri Road</a></h6>
+                                
+                                <h6><a href="#"></a></h6>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================Contact Area =================-->
+{% endblock content %}

@@ -1,0 +1,167 @@
+{% extends 'jwm/base.html' %}
+{% load static %}
+
+{% block content %}
+ <link rel="stylesheet" href="{% static 'trans/css/base.css' %}">
+        <link rel="stylesheet" href="{% static 'trans/css/vendor.css' %}">
+        <link rel="stylesheet" href="{% static 'trans/css/main.css' %}">
+        
+         <!--================banner Area =================-->
+        
+        <section class="breadcrumb_area br_image">
+
+
+
+            
+            <div class="container align-self-center">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="banner_content">
+                            
+                           
+                            
+
+                            <h2><font color="white"> JWM & ASSOCIATES ACCOUNTANCY & AUDIT </font>   <img src="{% static 'image/jwmlogo.png' %}" width="150px" height="150px" ></h2>
+
+                            <h2 class="page-cover-tittle">Book keeping & Accountancy services Platform</h2>
+                    <ol class="breadcrumb">
+                        <li><a href="{% url 'jwm-bookkeeping' %}">Home</a></li>
+                        <li class="active">Book keeping & Accountancy Services</li>
+                    </ol>
+                </div>
+                  <div class="col-md-12">
+                        <div class="banner_content">
+                           
+                            <a href="{% url 'jwm-audit' %}" class="btn_hover btn_hover_two">Audit Services</a>
+                             <a href="{% url 'jwm-financial' %}" class="btn_hover btn_hover_two">Financial Services</a>
+                             <a href="{% url 'jwm-bookkeeping' %}" class="btn_hover btn_hover_two">Book Keeping & Accountancy Services</a>
+                               <a href="{% url 'jwm-taxation' %}" class="btn_hover btn_hover_two">Taxation Services</a>
+                            <a href="{% url 'jwm-companysecretary' %}" class="btn_hover btn_hover_two">Company Secretarial Services</a>
+                               <a href="{% url 'jwm-administration' %}" class="btn_hover btn_hover_two">Administration services</a>
+                               <a href="{% url 'jwm-hr' %}" class="btn_hover btn_hover_two">Human Resource services</a>
+
+                               <a href="{% url 'jwm-other' %}" class="btn_hover btn_hover_two">Other Services</a>
+                            
+
+                                 
+                                  
+
+
+                        </div>
+                    </div>
+                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================banner Area =================-->
+
+
+
+
+
+          <!-- what we do
+    ================================================== -->
+    <section class="sermons_work_area section_gap">
+
+        <div class="section_title text-center">
+                    
+                    <p><font color="black"> JWM and Associates offer comprehensive bookkeeping and accountancy services that are tailored to meet the specific needs of your business. From preparing monthly management reports to conducting reconciliations and handling invoicing and supplier management, our team is dedicated to assisting your business in achieving financial success and growth
+                    </font></p>
+                </div>
+            
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Book keeping & Accountancy Services</h3>
+                <h1 class="display-1"> </h1>
+            </div>
+        </div>
+
+        <div class="row">
+                
+            <div class="about-process process block-1-2 block-tab-full">
+                 <div class="process__vline-left"></div>
+                <div class="process__vline-right"></div>
+
+
+                
+
+                <div class="col-block process__col" data-item="1" data-aos="fade-up">
+                    <div class="process__text">
+                        <h4>Prepare and Present Monthly Management Reports</h4>
+
+                        <p>
+                        We will create concise and informative monthly management reports that highlight key performance indicators, financial trends, and areas requiring attention. These reports will assist you in evaluating the effectiveness of your business strategies and identifying opportunities for improvement.
+                                                                         
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-block process__col" data-item="2" data-aos="fade-up">
+                    <div class="process__text">
+                        <h4>Prepare Monthly Payments to Different Suppliers:</h4>
+
+                        <p>
+                        Our team will handle the timely and accurate preparation of monthly payments to your various suppliers. By ensuring prompt payments, we can help maintain positive supplier relationships and optimize your cash flow management.
+                                                                         
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="col-block process__col" data-item="3" data-aos="fade-up">
+                    <div class="process__text">
+                        <h4>Bank, Cash, Debtors, and Creditors Reconciliation Every Month:</h4>
+
+                        <p>
+                        To ensure the accuracy and integrity of your financial records, we will conduct monthly reconciliations for your bank accounts, cash balances, debtors, and creditors. This process will help identify any discrepancies or errors, allowing for swift resolution and preventing potential financial risks.
+                                                                         
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="col-block process__col" data-item="4" data-aos="fade-up">
+                    <div class="process__text">
+                        <h4>Preparing Invoices for Suppliers:</h4>
+
+                        <p>
+                        We will take care of generating and issuing invoices to your suppliers, ensuring that they are accurate, compliant with applicable regulations, and delivered in a timely manner. This service will streamline your accounts payable process and foster efficient supplier management.                                                                         
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="col-block process__col" data-item="5" data-aos="fade-up">
+                    <div class="process__text">
+                        <h4>Conduct Monthly Stock Take and Compare with Monthly Sales:
+</h4>
+
+                        <p>
+                        Our team will assist you in conducting monthly stock take exercises to accurately track your inventory levels. By comparing the stock levels with monthly sales data, we can help identify any discrepancies and implement effective inventory management strategies.
+                                                                         
+                        </p>
+                    </div>
+                </div>
+
+
+               
+               
+               
+               
+                
+
+            </div> <!-- end process -->
+
+        </div> <!-- end about-stats -->
+
+    </section> <!-- end s-about -->
+
+        
+       
+        
+        
+{% endblock %}

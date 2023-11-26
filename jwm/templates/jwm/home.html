@@ -1,0 +1,347 @@
+{% extends 'jwm/base.html' %}
+{% load static %}
+
+{% block content %}
+ <style type="text/css">
+.mt-0 {
+  margin-top: 0 !important;
+
+}
+
+</style>
+        
+        <!--================banner Area =================-->
+        
+        <section class="breadcrumb_area br_image">
+
+
+
+            
+            <div class="container align-self-center mt-0">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="banner_content">
+                            
+                           
+                            <h2><font color="white"><b> Welcome to:</b> <br> JWM & ASSOCIATES ACCOUNTANCY & AUDIT </font>   <img src="{% static 'image/jwmlogo.png' %}" width="150px" height="150px" ></br><b>Taking Your Wealth into Account</b></h2>
+                            <p><font color="white"><b></b>.  Your Trusted Accounting, Tax and Audit Partner</font></p>
+                            <p><font color="white"> The epitome of accounting,<b> Balanced finance equals financial freedom</b></font></p>
+                            
+                       
+                        <div style="margin-top:10px;">
+                            <a href="{% url 'jwm-aboutus' %}" class="btn_hover btn_hover_two">About Us</a>
+                            <a href="{% url 'jwm-services' %}" class="btn_hover btn_hover_two ml-5">SERVICES</a>
+                        </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================banner Area =================-->
+        
+        <!--================Event Date Area =================-->
+      <!--  <section class="event_date_area">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="section_title text-center">
+                    
+                </div>
+                </div>
+                  <div class="row">
+                    <div class="diamond"></div>
+                    <div class="diamond1"></div>
+                    <div class="diamond2"></div>
+                    <div class="diamond3"></div>
+                    <div class="diamond4"></div>
+                    <div class="diamond5"></div>
+
+                <div class="col-md-6 d_flex ml3" >
+                        <div class="evet_location flex">
+                            
+
+                            <h1><b>add content</b></h1>
+                            <h3></h3>
+                            <p><font color="white">jwm associates<font color="#aa8800ff"><i> Best</i></font> services
+                                <font color="#aa8800ff"><i> ii.</font></p>
+
+                            <!-- <p><span class="lnr lnr-calendar-full"></span>5th may, 2028</p>
+                            <p><span class="lnr lnr-clock"></span>Saturday, 09.00 am to 05.00 pm</p> -->
+                       <!--  </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+
+        <!--================Event Date Area =================-->
+        
+        <!--================About Area =================-->
+        <section class="sermons_work_area section_gap">
+            <div class="container">
+                <div class="section_title text-center">
+                    
+                    <p><font color="black"> At JWM Associates, we are dedicated to providing exceptional accounting,tax and audit services to help businesses thrive and achieve their financial goals. With our team of highly skilled professionals and our commitment to excellence, we have earned a reputation as a trusted partner for businesses of all sizes. </font></p>
+                </div>
+                <div class="sermons_slider owl-carousel">
+                    <div class="item row">
+                        
+                        <div class="col-lg-5">
+                            <div class="sermons_content">
+                                <h3 class="title_color">Financial Planning</h3>
+                                 <tr>
+                                     <td><img src="{% static 'image/financialplanning.jpeg' %}" alt=""></td>
+                                     <td></td>
+                                 </tr>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item row">
+                        
+                        <div class="col-lg-6">
+                            <div class="sermons_content">
+                               <h3 class="title_color"></h3>
+                               <img src="{% static 'image/art1.jpeg' %}" " alt="">
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="item row">
+                        
+                        <div class="col-lg-6">
+                            <div class="sermons_content">
+                               <h3 class="title_color"></h3>
+                               <img src="{% static 'image/FinancialAudit.jpg' %}" " alt="">
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item row">
+                        
+                        <div class="col-lg-6">
+                            <div class="sermons_content">
+                               <h3 class="title_color"></h3>
+                               <img src="{% static 'image/tax1.jpeg' %}" " alt="">
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                    
+            </div>
+        </section>
+        <!--================About Area =================-->
+
+
+        <!-- =====why us====== -->
+
+    <section class="sermons_work_area section_gap">
+
+        
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Why Choose JWM Associates?</h3>
+                <h1 class="display-1"> </h1>
+            </div>
+        </div>
+
+        <div class="row">
+                
+            <div class="about-process process block-1-2 block-tab-full">
+
+                <div class="process__vline-left"></div>
+                <div class="process__vline-right"></div>
+
+                <div class="col-block process__col" data-item="1" data-aos="fade-up">
+                    <div class="process__text">
+                        <h4>Expertise and Experience:</h4>
+
+                        <p>
+                        With decades of collective experience in the accounting and audit industry, our team at JWM Associates brings a wealth of knowledge and expertise to every client engagement. We stay up-to-date with the latest regulations and best practices to ensure accurate financial reporting and compliance.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-block process__col" data-item="2" data-aos="fade-up">
+                    <div class="process__text">
+                        <h4>Tailored Solutions:</h4>
+
+                        <p>
+                        We understand that each business is unique, with its own set of challenges and goals. That's why we take the time to understand your specific needs and tailor our services accordingly. Whether you require comprehensive accounting support or a one-time audit, we deliver customized solutions that align with your objectives.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-block process__col" data-item="3" data-aos="fade-up">
+                    <div class="process__text">
+                        <h4>Proactive Advice:</h4>
+
+                        <p>
+                        At JWM Associates, we don't just crunch numbers; we provide proactive advice to help you make informed financial decisions. Our team acts as a trusted advisor, offering insights and recommendations to improve your financial performance, optimize tax strategies, and enhance overall business efficiency.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-block process__col" data-item="4" data-aos="fade-up">
+                    <div class="process__text">
+                        <h4>Technology-driven Approach:</h4>
+
+                        <p>
+                        We embrace technology to streamline processes and deliver efficient services to our clients. By leveraging cutting-edge accounting software and tools, we enhance accuracy, save time, and provide real-time financial information for better decision-making.
+                        </p>
+                    </div>
+                </div>
+               
+
+            </div> <!-- end process -->
+
+        </div> <!-- end about-stats -->
+
+    </section> <!-- end s-about -->
+
+
+
+
+       
+        
+        
+        <!--================What we do area=================-->
+       <section class="donate_area">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-6  ">
+                        <div class="donate_content  ">
+                            <h2>What We Do </h2>
+                            <p> <b><font color="">•  FINANCIAL DUTIES</b>      </font>  </p>
+                       
+                            <p> <b><font color="">•  TAXATION DUTIES</b>   </font>  </p>
+
+                            <p> <b><font color="">•  ADMNISTRATION DUTIES</b>   </font>  </p>
+                            <p> <b><font color="">•  HUMAN RESOUCE DUTIES</b>   </font>  </p>
+                            <p> <b><font color="">•  SECRETARIAL DUTIES</b>   </font>  </p>
+                            <p> <b><font color="">•  Audit  DUTIES</b>   </font>  </p>
+
+                           
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="donation_form">
+                            
+                         
+
+                           <section class="sermons_work_area section_gap">
+            <div class="container">
+
+                <div class="section_title text-center">
+                    <h2>JWM Services</h2>
+                   
+                </div>
+                <div class="sermons_slider owl-carousel">
+                    <div class="item row">
+                        <div class="col-lg-8">
+
+                            <div class="sermons_image">
+                                <p><b>Book Keeping and Accounting</b></p>
+                                
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="item row">
+                        <div class="col-lg-8">
+                            <div class="sermons_image ">
+                                <p><b>Book Keeping and Accounting</b></p>
+                                <img src="{% static 'image/booka.jpg' %}" alt="">
+                            </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="item row">
+                        <div class="col-lg-8">
+                            <div class="sermons_image">
+                                <p> <b><font color="">•  Payroll Administration</b> :  </font>  </p>
+                                <img src="{% static 'image/payroll1.png' %}" " alt="">
+                            </div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="item row">
+                        <div class="col-lg-8">
+                            <div class="sermons_image">
+                                <p> <b><font color="">•  Tax Filling and Remittance</b> :  </font>  </p>
+                                <img src="{% static 'image//tax1.jpeg' %}" " alt="">
+                            </div>
+                        
+                    </div>
+                    
+                </div>
+
+                 <div class="item row">
+                        <div class="col-lg-8">
+                            <div class="sermons_image">
+                                <p> <b><font color="">•  Auditing</b> :  </font>  </p>
+                                <img src="{% static 'image//auditing.jpg' %}" " alt="">
+                            </div>
+                        
+                    </div>
+                    
+                </div>
+               
+
+
+               
+
+
+
+
+            </div>
+        </section>
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================what we do Area=================-->
+
+
+
+
+        <!--================strategy Area =================-->
+       <section class="sermons_work_area section_gap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 d-flex align-self-center">
+                        <div class="donate_content ">
+                            <h2><font color="black"> </font></h2>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+        <!--================strategy Area =================-->
+
+
+
+
+
+
+
+        
+        <!--================Event Blog Area=================-->
+    
+        <!--================Blog Area=================-->
+        
+        
+{% endblock content %}

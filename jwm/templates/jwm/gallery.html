@@ -1,0 +1,160 @@
+{% extends 'jwm/base.html' %}
+{% load static %}
+
+{% block content %} 
+<link rel="stylesheet" href="{% static 'trans/css/base.css' %}">
+        <link rel="stylesheet" href="{% static 'trans/css/vendor.css' %}">
+        
+        <!--================Breadcrumb Area =================-->
+        <section class="breadcrumb_area br_image">
+            <div class="container">
+                <div class="page-cover text-center">
+                    <h2 class="page-cover-tittle">Kujia Gallery</h2>
+                    <ol class="breadcrumb">
+                        <li><a href="{% url 'kijiji-home' %}">Home</a></li>
+                        <li class="active">Gallery</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <!--================Breadcrumb Area =================-->
+     
+        
+       <!--================Breadcrumb Area =================-->
+        <section class="gallery_area section_gap">
+            <div class="container">
+                <div class="row imageGallery1" id="gallery">
+
+                    <div class="col-md-4 gallery_item">
+                        <div class="gallery_img">
+                            <img src="{% static 'image/gall/1.jpeg' %}" alt="">
+                            <div class="hover">
+                              <a class="light" href="{% static 'image/gall/1.jpeg' %}"><i class="fa fa-expand"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 gallery_item">
+                        <div class="gallery_img">
+                            <img src="{% static 'image/gall/2.jpeg' %}" alt="">
+                            <div class="hover">
+                              <a class="light" href="{% static 'image/gall/2.jpeg' %}"><i class="fa fa-expand"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 gallery_item">
+                        <div class="gallery_img">
+                            <img src="{% static 'image/gall/3.jpeg' %}" alt="">
+                            <div class="hover">
+                              <a class="light" href="{% static 'image/gall/3.jpeg' %}"><i class="fa fa-expand"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 gallery_item">
+                        <div class="gallery_img">
+                            <img src="{% static 'image/gall/4.jpeg' %}" alt="">
+                            <div class="hover">
+                              <a class="light" href="{% static 'image/gall/4.jpeg' %}"><i class="fa fa-expand"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 gallery_item">
+                        <div class="gallery_img">
+                            <img src="{% static 'image/gall/5.jpeg' %}" alt="">
+                            <div class="hover">
+                              <a class="light" href="{% static 'image/gall/5.jpeg' %}"><i class="fa fa-expand"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 gallery_item">
+                        <div class="gallery_img">
+                            <img src="{% static 'image/gall/6.jpeg' %}" alt="">
+                            <div class="hover">
+                              <a class="light" href="{% static 'image/gall/6.jpeg' %}"><i class="fa fa-expand"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4 gallery_item">
+                        <div class="gallery_img">
+                            <img src="{% static 'image/gall/7.jpeg' %}" alt="">
+                            <div class="hover">
+                              <a class="light" href="{% static 'image/gall/7.jpeg' %}"><i class="fa fa-expand"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="col-md-4 gallery_item">
+                        <div class="gallery_img">
+                            <img src="{% static 'image/gall/8.jpeg' %}" alt="">
+                            <div class="hover">
+                              <a class="light" href="{% static 'image/gall/8.jpeg' %}"><i class="fa fa-expand"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="col-md-4 gallery_item">
+                        <div class="gallery_img">
+                            <img src="{% static 'image/gall/9.jpeg' %}" alt="">
+                            <div class="hover">
+                              <a class="light" href="{% static 'image/gall/9.jpeg' %}"><i class="fa fa-expand"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 gallery_item">
+                        <div class="gallery_img">
+                            <img src="{% static 'image/gall/10.png' %}" alt="">
+                            <div class="hover">
+                              <a class="light" href="{% static 'image/ourstrategy1.png' %}"><i class="fa fa-expand"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="col-md-4 gallery_item">
+                        <div class="gallery_img">
+                            <img src="{% static 'image/gall/11.jpeg' %}" alt="">
+                            <div class="hover">
+                              <a class="light" href="{% static 'image/gall/11.jpeg' %}"><i class="fa fa-expand"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--================Gallery Area =================-->
+        {% if is_paginated %}
+
+          {% if page_obj.has_previous %}
+
+            <a class="btn btn-outline-info mb-4"href="?page=1">First</a>
+            <a class="btn btn-outline-info mb-4"href="?page={{ page_obj.previous_page_number }}">Previous</a>
+
+          {% endif %}
+
+           {% for num in page_obj.paginator.page_range %}
+              {% if page_obj.number == num %}
+
+                  <a class="btn btn-info mb-4"href="?page={{ num }}">{{ num }}</a>
+
+              {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+
+                  <a class="btn btn-outline-info mb-4"href="?page={{ num }}">{{ num }}</a>
+
+              {% endif %}
+
+           {% endfor %}
+
+           {% if page_obj.has_next %}
+
+             <a class="btn btn-outline-info mb-4"href="?page={{ page_obj.next_page_number }}">Next</a>
+             <a class="btn btn-outline-info mb-4"href="?page={{ page_obj.paginator.num_pages }}">Last</a>
+
+           {% endif %}
+
+    {% endif %}
+        
+ {% endblock %}     
